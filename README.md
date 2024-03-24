@@ -1,8 +1,8 @@
 # Adding FbkStickers to Matrix on Element
 1. Enter command `/devtools` in the chat box.
-2. Look for the `Custom` tab. Click `Explore account data`.
-3. Search for `m.widgets` and click on it to edit.
-4. Paste the following code and click `Send`.
+2. Look for the `Other` tab. Click `Explore account data`.
+3. Search for `m.widgets` and click on the `Edit` button to edit.
+4. Paste the following code and click `Send`. Where as `<YOUR_NAME>` is your username and `<YOUR_HOMESERVER>` is your homeserver url.
 ```json
 {
   "stickerpicker": {
@@ -20,8 +20,6 @@
   }
 }
 ```
-
-Where as `<YOUR_NAME>` is your username and `<YOUR_HOMESERVER>` is your homeserver url.
 
 # Maunium sticker picker
 A fast and simple Matrix sticker picker widget. Tested on Element Web, Android & iOS.
