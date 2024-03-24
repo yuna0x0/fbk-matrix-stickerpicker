@@ -1,3 +1,28 @@
+# Adding FbkStickers to Matrix on Element
+1. Enter command `/devtools` in the chat box.
+2. Look for the `Custom` tab. Click `Explore account data`.
+3. Search for `m.widgets` and click on it to edit.
+4. Paste the following code and click `Send`.
+```json
+{
+  "stickerpicker": {
+    "content": {
+      "type": "m.stickerpicker",
+      "url": "https://m-stickers.fbk.moe/?theme=$theme",
+      "name": "FbkStickers",
+      "creatorUserId": "@<YOUR_NAME>:<YOUR_HOMESERVER>",
+      "data": {}
+    },
+    "sender": "@<YOUR_NAME>:<YOUR_HOMESERVER>",
+    "state_key": "fbkstickers",
+    "type": "m.widget",
+    "id": "stickers-fbkmoe"
+  }
+}
+
+Where as `<YOUR_NAME>` is your username and `<YOUR_HOMESERVER>` is your homeserver url.
+```
+
 # Maunium sticker picker
 A fast and simple Matrix sticker picker widget. Tested on Element Web, Android & iOS.
 
