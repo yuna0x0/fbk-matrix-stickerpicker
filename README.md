@@ -19,9 +19,9 @@
     "id": "stickers-fbkmoe"
   }
 }
+```
 
 Where as `<YOUR_NAME>` is your username and `<YOUR_HOMESERVER>` is your homeserver url.
-```
 
 # Maunium sticker picker
 A fast and simple Matrix sticker picker widget. Tested on Element Web, Android & iOS.
